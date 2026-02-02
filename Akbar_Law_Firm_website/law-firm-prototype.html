@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكبر محامون ومستشارون | Akbar Lawyers & Legal Consultants</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-navy: #0a1628;
+            --secondary-navy: #1a2847;
+            --gold: #d4af37;
+            --gold-light: #f0d785;
+            --gold-dark: #b8941f;
+            --cream: #faf8f3;
+            --white: #ffffff;
+            --text-dark: #2d2d2d;
+            --text-light: #666666;
+            --border-gold: rgba(212, 175, 55, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Work Sans', sans-serif;
+            background: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to bottom, rgba(10, 22, 40, 0.98), rgba(10, 22, 40, 0.95));
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-gold);
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', 'Tajawal', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            color: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .lang-switch {
+            background: transparent;
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-switch:hover {
+            background: var(--gold);
+            color: var(--primary-navy);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            background: 
+                linear-gradient(135deg, rgba(10, 22, 40, 0.85) 0%, rgba(26, 40, 71, 0.90) 100%),
+                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070');
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .decorative-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(212, 175, 55, 0.03) 2px, rgba(212, 175, 55, 0.03) 4px);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 1200px;
+            padding: 0 2rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', 'Tajawal', serif;
+            font-size: 4.5rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-title .gold-accent {
+            color: var(--gold);
+            display: block;
+            font-size: 5.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--cream);
+            margin-bottom: 3rem;
+            font-weight: 300;
+            line-height: 1.8;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            gap: 1.5rem;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'Tajawal', 'Work Sans', sans-serif;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--primary-navy);
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(212, 175, 55, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-navy);
+            transform: translateY(-3px);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        .scroll-indicator::before {
+            content: '↓';
+            font-size: 2rem;
+            color: var(--gold);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 8rem 2rem;
+            background: var(--cream);
+            position: relative;
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .section-header.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-label {
+            font-size: 0.9rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', 'Tajawal', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+            margin-top: 4rem;
+        }
+
+        .about-text {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.8s ease;
+        }
+
+        .about-text.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 8px;
+            border: 1px solid var(--border-gold);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+            border-color: var(--gold);
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', 'Tajawal', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .about-image {
+            position: relative;
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s ease;
+        }
+
+        .about-image.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 600px;
+            background: 
+                linear-gradient(135deg, rgba(10, 22, 40, 0.4) 0%, rgba(26, 40, 71, 0.5) 100%),
+                url('https://plus.unsplash.com/premium_photo-1661431050026-ce17df0c2a43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2F2ZWx8ZW58MHx8MHx8fDA%3D') center/cover no-repeat;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid var(--gold);
+        }
+
+        .image-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.15) 0%, transparent 60%);
+        }
+
+        .image-placeholder::after {
+            content: '';
+        }
+        /* Services Section */
+        .services-section {
+            padding: 8rem 2rem;
+            background: var(--primary-navy);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+        }
+
+        .services-section .section-title,
+        .services-section .section-label {
+            color: var(--white);
+        }
+
+        .services-section .section-title {
+            color: var(--gold);
+        }
+
+        .services-section .section-description {
+            color: var(--cream);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.4s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            cursor: pointer;
+        }
+
+        .service-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--gold);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .service-title {
+            font-family: 'Playfair Display', 'Tajawal', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            color: var(--cream);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        /* Founder Section */
+        .founder-section {
+            padding: 8rem 2rem;
+            background: var(--cream);
+        }
+
+        .founder-content {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 5rem;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .founder-image-container {
+            position: relative;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.8s ease;
+        }
+
+        .founder-image-container.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .founder-image {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, var(--primary-navy), var(--secondary-navy));
+            border-radius: 8px;
+            border: 3px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .founder-image::after {
+            content: '';
+        }
+
+        .founder-info {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s ease 0.2s;
+        }
+
+        .founder-info.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .founder-name {
+            font-family: 'Playfair Display', 'Tajawal', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .founder-title {
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .founder-bio {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+        }
+
+        .credentials {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .credential-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--white);
+            border-radius: 4px;
+            border-left: 3px solid var(--gold);
+        }
+
+        .credential-icon {
+            font-size: 1.5rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--primary-navy), var(--secondary-navy));
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-family: 'Playfair Display', 'Tajawal', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.2rem;
+            color: var(--cream);
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-navy);
+            padding: 4rem 2rem 2rem;
+            color: var(--cream);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand {
+            font-family: 'Playfair Display', 'Tajawal', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: var(--cream);
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--cream);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+            padding-right: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(250, 248, 243, 0.7);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--gold);
+            color: var(--primary-navy);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 3.5rem;
+            }
+            
+            .hero-title .gold-accent {
+                font-size: 4rem;
+            }
+
+            .about-content,
+            .founder-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-title .gold-accent {
+                font-size: 3rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* Scroll animations trigger */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">أكبر محامون</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#founder">المؤسس</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                    <li><button class="lang-switch">EN</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="decorative-pattern"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                العدالة والتميز
+                <span class="gold-accent">في خدمتكم</span>
+            </h1>
+            <p class="hero-subtitle">
+                خدمات واستشارات قانونية متكاملة تضمن تأسيساً سليماً لأعمالكم، وحماية مصالحكم، 
+                وحل النزاعات بكفاءة لتحقيق نجاحات مثمرة وشراكات بنّاءة
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">احجز استشارة</a>
+                <a href="#about" class="btn btn-secondary">تعرف علينا</a>
+            </div>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-label">من نحن</div>
+                <h2 class="section-title">منشأة متخصصة في القانون</h2>
+                <p class="section-description">
+                    نجمع بين الخبرة القانونية العميقة والفهم الشامل لاحتياجات عملائنا
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <p>
+                        تأسست منشأة أكبر محامون ومستشارون قانونيون في عام 2020م بقيادة المحامي 
+                        والمستشار القانوني عبدالله بن فؤاد أكبر، ضمن فريق متميز من الخبراء المحامين 
+                        والقانونيين والمحكَّمين المختصين في مجالات متعددة.
+                    </p>
+                    <p>
+                        نتخصص في أنظمة التقنية والذكاء الاصطناعي، مثل نظام حماية البيانات الشخصية PDPL، 
+                        ونظام حماية البيانات العامة GDPR، ونظام التعاملات الإلكترونية، وأنظمة التجارة 
+                        الدولية والتجارة الالكترونية، والأنظمة الإدارية والعمالية والصحية.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card animate-on-scroll">
+                            <div class="stat-number">2020</div>
+                            <div class="stat-label">تأسست في</div>
+                        </div>
+                        <div class="stat-card animate-on-scroll">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">قضية ناجحة</div>
+                        </div>
+                        <div class="stat-card animate-on-scroll">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">نسبة النجاح</div>
+                        </div>
+                        <div class="stat-card animate-on-scroll">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">سنوات خبرة</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image animate-on-scroll">
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-label">خدماتنا</div>
+                <h2 class="section-title">خدمات قانونية شاملة</h2>
+                <p class="section-description">
+                    نقدم مجموعة متكاملة من الخدمات القانونية المتخصصة
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.1s">
+                    <span class="service-icon">⚖️</span>
+                    <h3 class="service-title">التقاضي والتحكيم</h3>
+                    <p class="service-description">
+                        تمثيل الشركات والمؤسسات بمختلف درجات التقاضي أمام المحاكم وهيئات التحكيم 
+                        بكفاءة واحترافية عالية
+                    </p>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.2s">
+                    <span class="service-icon">🏢</span>
+                    <h3 class="service-title">الشركات والاستثمار</h3>
+                    <p class="service-description">
+                        ندعم رواد الأعمال ونواكب احتياجات المستثمرين المحليين والأجانب بتقديم 
+                        حلول متكاملة
+                    </p>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.3s">
+                    <span class="service-icon">🤖</span>
+                    <h3 class="service-title">التقنية والذكاء الاصطناعي</h3>
+                    <p class="service-description">
+                        نواكب التحولات الرقمية عبر حلول قانونية مبتكرة تنظم استخدام التقنية 
+                        والذكاء الاصطناعي
+                    </p>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.4s">
+                    <span class="service-icon">📋</span>
+                    <h3 class="service-title">الاستشارات والعقود</h3>
+                    <p class="service-description">
+                        استشارات قانونية رفيعة المستوى، ونقوم بصياغة ومراجعة العقود وفق أعلى المعايير
+                    </p>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.5s">
+                    <span class="service-icon">💼</span>
+                    <h3 class="service-title">التصفية والإفلاس</h3>
+                    <p class="service-description">
+                        ندير عمليات الإفلاس وإعادة التنظيم المالي والتسوية الواقية من الإفلاس 
+                        والتصفية بكفاءة
+                    </p>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.6s">
+                    <span class="service-icon">👥</span>
+                    <h3 class="service-title">العمل والعمال</h3>
+                    <p class="service-description">
+                        نقدم استراتيجيات قانونية متوازنة لإدارة علاقات العمل بما يحافظ على امتثال 
+                        الشركات للأنظمة
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section" id="founder">
+        <div class="founder-content">
+            <div class="founder-image-container animate-on-scroll">
+                <div class="founder-image">
+                    <img src="founder.png" alt="عبدالله فؤاد أكبر" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                </div>
+            </div>
+            <div class="founder-info animate-on-scroll">
+                <h2 class="founder-name">عبدالله فؤاد أكبر</h2>
+                <p class="founder-title">مستشار التحكيم وخبير أنظمة التقنية والذكاء الاصطناعي</p>
+                <div class="founder-bio">
+                    <p>
+                        محامي مرخص وخبير التقنية والذكاء الاصطناعي المعتمد من مايكروسوفت، وحاصل على 
+                        شهادة الامتثال للائحة العامة لحماية البيانات (GDPR)، مؤسس مركز مكة للتحكيم 
+                        التجاري بالغرفة التجارية الصناعية بمكة المكرمة.
+                    </p>
+                    <p>
+                        يتمتع بخبرة واسعة في مجال القانون والتحكيم، ويعمل على تقديم حلول قانونية 
+                        مبتكرة تواكب التطورات التقنية الحديثة.
+                    </p>
+                </div>
+
+                <div class="credentials">
+                    <div class="credential-item animate-on-scroll">
+                        <span class="credential-icon">🎓</span>
+                        <span>خبير معتمد من Microsoft في الذكاء الاصطناعي</span>
+                    </div>
+                    <div class="credential-item animate-on-scroll">
+                        <span class="credential-icon">📜</span>
+                        <span>شهادة الامتثال للائحة العامة لحماية البيانات GDPR</span>
+                    </div>
+                    <div class="credential-item animate-on-scroll">
+                        <span class="credential-icon">⚖️</span>
+                        <span>مؤسس مركز مكة للتحكيم التجاري</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="cta-content">
+            <h2 class="cta-title">احصل على استشارتك القانونية الآن</h2>
+            <p class="cta-subtitle">
+                فريقنا جاهز لدعمك وحماية حقوقك من أول خطوة وحتى تحقيق أهدافك
+            </p>
+            <div class="hero-cta">
+                <a href="#" class="btn btn-primary">تواصل معنا</a>
+                <a href="tel:+966546415553" class="btn btn-secondary">اتصل الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">أكبر محامون</div>
+                <p class="footer-description">
+                    منشأة قانونية سعودية متخصصة في تقديم خدمات واستشارات قانونية متكاملة 
+                    بأعلى معايير الجودة والاحترافية
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="footer-title">روابط سريعة</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#founder">المؤسس</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">خدماتنا</h3>
+                <ul class="footer-links">
+                    <li><a href="#">التقاضي والتحكيم</a></li>
+                    <li><a href="#">الاستشارات القانونية</a></li>
+                    <li><a href="#">التقنية والذكاء الاصطناعي</a></li>
+                    <li><a href="#">الشركات والاستثمار</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">تواصل معنا</h3>
+                <ul class="footer-links">
+                    <li>مكة المكرمة، حي الهجرة</li>
+                    <li>مخطط الأمير أحمد - مبنى 3310</li>
+                    <li><a href="tel:+966546415553">+966 54 641 5553</a></li>
+                    <li><a href="mailto:Mr.Lawyer@Live.com">Mr.Lawyer@Live.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة © 2024 أكبر محامون ومستشارون قانونيون</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animate-on-scroll class
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Language switcher placeholder
+        document.querySelector('.lang-switch').addEventListener('click', function() {
+            alert('Language switching functionality would be implemented here');
+        });
+    </script>
+</body>
+</html>
