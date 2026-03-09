@@ -1,4 +1,4 @@
-# A-Law-Firm
+# Akbar-Firm-Website
 Private repo of Akbar Law Firm web development
 # ⚖️ Luxury Law Firm Website
 
@@ -22,15 +22,12 @@ A modern, elegant website for a Saudi Arabian law firm featuring sophisticated d
 - [Performance](#performance)
 - [Browser Support](#browser-support)
 - [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
 ## 🎯 Overview
 
 This project is a sophisticated, single-page website prototype designed for a legal consultancy firm. It showcases modern web development practices including responsive design, scroll-triggered animations, and RTL (right-to-left) language support for Arabic content.
-
-**Live Demo:** [View Demo](#) *(Add your deployment link here)*
 
 ## ✨ Features
 
@@ -100,54 +97,6 @@ The design follows these core principles:
 - A code editor (VS Code, Sublime Text, etc.)
 - Basic understanding of HTML, CSS, and JavaScript
 
-### Setup Instructions
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/law-firm-website.git
-cd law-firm-website
-```
-
-2. **Project Structure**
-```
-law-firm-website/
-├── index.html              # Main HTML file
-├── images/                 # Image assets folder
-│   ├── logo.png           # Company logo
-│   └── founder.jpg        # Founder photo
-├── README.md              # This file
-└── LICENSE                # License information
-```
-
-3. **Add Your Images**
-   - Place your logo in `images/logo.png`
-   - Place founder photo in `images/founder.jpg`
-   - Update image references in HTML if using different file names
-
-4. **Open in Browser**
-```bash
-# Simply open the HTML file in your browser
-open index.html
-# or
-start index.html
-# or double-click the file
-```
-
-### Alternative: Using a Local Server
-
-For testing features that require a server (like certain APIs):
-
-```bash
-# Using Python 3
-python -m http.server 8000
-
-# Using Node.js (http-server package)
-npx http-server
-
-# Using VS Code Live Server extension
-# Right-click on index.html → "Open with Live Server"
-```
-
 ## 📁 Project Structure
 
 ```
@@ -186,14 +135,6 @@ Update the CSS variables in the `:root` selector (around line 20):
     --gold: #d4af37;            /* Change to your accent color */
     /* ... other variables */
 }
-```
-
-### Adding Your Logo
-
-1. Place your logo in the `images/` folder
-2. Update the logo `<img>` tag in the header:
-```html
-<img src="images/your-logo.png" alt="Company Name">
 ```
 
 ### Changing Background Images
@@ -277,43 +218,31 @@ Adjust animation timing and delays:
 - [ ] **SEO Optimization**: Meta tags, structured data, sitemap
 - [ ] **Analytics**: Google Analytics integration
 
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License.
 
 ## 👨‍💻 Developer
 
-**Mohammed (Mad)**  
+**Mohammed Akbar**  
 Software Engineering Student | Umm Al-Qura University
 
-- 📍 Location: Jeddah, Saudi Arabia
-- 💼 LinkedIn: [Your LinkedIn](#)
-- 🐙 GitHub: [Your GitHub](#)
-- 📧 Email: your.email@example.com
+- 📍 Location: makkah, Saudi Arabia
+- 💼 LinkedIn: linkedin.com/in/mohammad-akbar-21897230b
+- 🐙 GitHub: github.com/mohAkbar
+- 📧 Email: mafakbar@gmail.com
 
 ## 📞 Contact
 
 For questions, suggestions, or collaboration opportunities:
 
-- **Email**: your.email@example.com
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/law-firm-website/issues)
-
+- **Email**: mafakbar@gmail.com
 ---
 
 <div align="center">
 
 ### ⭐ If you found this project helpful, please give it a star!
 
-**Built with ❤️ by Mohammed | 2024**
+**Built with ❤️ by Mohammed | 2025**
 
 </div>
